@@ -1,8 +1,8 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + NextUI",
-  description: "Make beautiful websites regardless of your design experience.",
+  name: "FakeAlert",
+  description: "Fake News Detection App.",
   navItems: [
     {
       label: "Home",
@@ -14,10 +14,11 @@ export const siteConfig = {
     },
     {
       label: "Docs",
-      href: "/docs",
+      href: "https://lazybug19.github.io/fake-news-detection/",
     },
   ],
   links: {
     github: "https://github.com/lazybug19",
+    contribute: "https://github.com/lazybug19/fake-news-detection",
   },
 };

@@ -15,19 +15,23 @@ import { siteConfig } from "@/config/site";
 import {
   GithubIcon,
   HeartFilledIcon,
+  Logo,
 } from "@/components/icons";
+import { subtitle, title } from "./primitives";
 
 export const Navbar = () => {
   return (
     <NextUINavbar className="bg-slate-800 dark:text-white text-white" maxWidth="xl" position="sticky">
-      <NavbarContent className="basis-1/5 sm:basis-full dark:text-white text-white" justify="start">
-        <ul className="hidden lg:flex gap-4 justify-start ml-2">
+      <NavbarContent className="basis-1/5 sm:basis-full dark:text-white text-white" justify="end">
+        <Logo />
+        <h5 className={subtitle()}>FakeAlert</h5>
+        <ul className="hidden lg:flex gap-4 justify-center ml-64">
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
               <NextLink
                 className={clsx(
                   linkStyles({ color: "foreground" }),
-                  "data-[active=true]:text-primary data-[active=true]:font-medium dark:text-white text-white",
+                  "data-[active=true]:text-primary data-[active=true]:font-medium dark:text-white text-white px-4 justify-center",
                 )}
                 color="foreground"
                 href={item.href}
@@ -53,7 +57,7 @@ export const Navbar = () => {
             isExternal
             as={Link}
             className="text-sm font-normal bg-gray-950 dark:text-white text-white"
-            href={siteConfig.links.github}
+            href={siteConfig.links.contribute}
             startContent={<HeartFilledIcon className="text-danger" />}
             variant="flat"
           >
