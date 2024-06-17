@@ -19,18 +19,15 @@ import {
 
 export const Navbar = () => {
   return (
-    <NextUINavbar className="bg-slate-800" maxWidth="xl" position="sticky">
-      <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
-        <NavbarBrand as="li" className="gap-3 max-w-fit">
-
-        </NavbarBrand>
+    <NextUINavbar className="bg-slate-800 dark:text-white text-white" maxWidth="xl" position="sticky">
+      <NavbarContent className="basis-1/5 sm:basis-full dark:text-white text-white" justify="start">
         <ul className="hidden lg:flex gap-4 justify-start ml-2">
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
               <NextLink
                 className={clsx(
                   linkStyles({ color: "foreground" }),
-                  "data-[active=true]:text-primary data-[active=true]:font-medium",
+                  "data-[active=true]:text-primary data-[active=true]:font-medium dark:text-white text-white",
                 )}
                 color="foreground"
                 href={item.href}
@@ -43,19 +40,19 @@ export const Navbar = () => {
       </NavbarContent>
 
       <NavbarContent
-        className="hidden sm:flex basis-1/5 sm:basis-full"
+        className="hidden sm:flex basis-1/5 sm:basis-full dark:text-white text-white"
         justify="end"
       >
-        <NavbarItem className="hidden sm:flex gap-2">
+        <NavbarItem className="hidden sm:flex gap-2 dark:text-white text-white">
           <Link isExternal aria-label="Github" href={siteConfig.links.github}>
             <GithubIcon className="text-default-500" />
           </Link>
         </NavbarItem>
-        <NavbarItem className="hidden md:flex">
+        <NavbarItem className="hidden md:flex dark:text-white text-white">
           <Button
             isExternal
             as={Link}
-            className="text-sm font-normal text-default-600 bg-gray-950"
+            className="text-sm font-normal bg-gray-950 dark:text-white text-white"
             href={siteConfig.links.github}
             startContent={<HeartFilledIcon className="text-danger" />}
             variant="flat"
@@ -65,9 +62,9 @@ export const Navbar = () => {
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
+      <NavbarContent className="sm:hidden basis-1 pl-4 dark:text-white text-white" justify="end">
         <Link isExternal aria-label="Github" href={siteConfig.links.github}>
-          <GithubIcon className="text-default-500" />
+          <GithubIcon className="dark:text-white text-white" />
         </Link>
         <NavbarMenuToggle />
       </NavbarContent>

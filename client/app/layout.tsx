@@ -47,14 +47,14 @@ export default function RootLayout({
             <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow bg-gradient-to-r from-sky-500 to-indigo-500">
               {children}
             </main>
-            <footer className="w-full flex items-center justify-center py-3 bg-slate-800">
+            <footer className="w-full flex items-center justify-center py-3 bg-slate-800 dark:text-white text-white">
               <Link
                 isExternal
-                className="flex items-center gap-1 text-current"
+                className="flex items-center gap-1 dark:text-white text-white"
                 href="https://lazybug19.github.io/"
                 title="portfolio"
               >
-                <span className="text-default-600">Made with 💙 &copy; 2024</span>
+                <span className="dark:text-white text-white">Made with 💙 &copy; 2024</span>
                 <p className="text-primary">Santrupti Behera</p>
               </Link>
             </footer>
