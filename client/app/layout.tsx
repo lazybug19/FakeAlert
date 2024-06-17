@@ -37,7 +37,7 @@ export default function RootLayout({
       <head />
       <body
         className={clsx(
-          "min-h-screen bg-background font-sans antialiased",
+          "min-h-screen bg-background font-sans antialiased dark:text-white text-white",
           fontSans.variable,
         )}
       >
@@ -47,15 +47,15 @@ export default function RootLayout({
             <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow bg-gradient-to-r from-sky-500 to-indigo-500">
               {children}
             </main>
-            <footer className="w-full flex items-center justify-center py-3">
+            <footer className="w-full flex items-center justify-center py-3 bg-slate-800">
               <Link
                 isExternal
                 className="flex items-center gap-1 text-current"
-                href="https://nextui-docs-v2.vercel.app?utm_source=next-app-template"
-                title="nextui.org homepage"
+                href="https://lazybug19.github.io/"
+                title="portfolio"
               >
-                <span className="text-default-600">Powered by</span>
-                <p className="text-primary">NextUI</p>
+                <span className="text-default-600">Made with 💙 &copy; 2024</span>
+                <p className="text-primary">Santrupti Behera</p>
               </Link>
             </footer>
           </div>
