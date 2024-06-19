@@ -13,15 +13,16 @@ Cross-referencing claims with reliable databases and analysing context, every ne
 
 ## Getting started
 
-Download the [dataset](https://www.kaggle.com/datasets/jruvika/fake-news-detection/data) from Kaggle.
+Download the [dataset](https://www.kaggle.com/datasets/jruvika/fake-news-detection/data) from Kaggle and import the libraries below, before running the fakenews.ipynb notebook.
 
-### Installing Libraries
+### Importing Libraries
 ```sh
 %pip install bayesian-optimization==1.4.1
 import nltk
 nltk.download('stopwords')
 nltk.download('punkt')
 ```
+
 
 ### Compiling (GCC compiler) into executable files
 ```sh
