@@ -7,19 +7,20 @@ FakeAlert is a fake news detection app leveraging Ensemble ML models and NLP con
 ## Credibility Scores
 
 Cross-referencing claims with reliable databases and analysing context, every news article is assigned a credibility score ranging from 0 to 100, where:
-  <ul>
-  <li>0-30: Highly unreliable, likely fake.</li>
-  <li>31-69: Requires further scrutiny, potentially misleading.</li>
-  <li> 70-100: Reliable and credible.</li>
-  </ul>
+  - 0-30: Highly unreliable, likely fake.
+  - 31-69: Requires further scrutiny, potentially misleading.
+  - 70-100: Reliable and credible.
 
 ## Getting started
 
-- Download the [dataset](https://www.kaggle.com/datasets/jruvika/fake-news-detection/data)
+Download the [dataset](https://www.kaggle.com/datasets/jruvika/fake-news-detection/data) from Kaggle.
 
-### Navigating to root directory
+### Installing Libraries
 ```sh
-cd /path/to/the/root
+%pip install bayesian-optimization==1.4.1
+import nltk
+nltk.download('stopwords')
+nltk.download('punkt')
 ```
 
 ### Compiling (GCC compiler) into executable files
