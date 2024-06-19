@@ -31,7 +31,7 @@ nltk.download('punkt')
 ```
 
 
-### Compiling (GCC compiler) into executable files
+### Running the app
 ```sh
 npm install
 npm run dev
