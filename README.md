@@ -1,13 +1,5 @@
 # FakeAlert 
-<p className="text-large text-justify">FakeAlert is a fake news detection app leveraging advanced machine learning (ML) models and natural language processing (NLP) to evaluate the credibility of news articles. Utilizing a seamless and responsive user interface built with Next.js, TypeScript, and Framer Motion, FakeAlert provides an intuitive and engaging experience. The robust backend is powered by Django REST API to ensure secure and efficient data handling. <br /><br />
-          Cross-referencing claims with reliable databases and combining the strengths of various ML algorithms, FakeAlert enhances prediction accuracy. Every news article is assigned a credibility score ranging from 0 to 100, where:<br />
-          <br /></p>
-        <ul className="text-large text-justify list-disc ml-9">
-          <li>0-30: Highly unreliable, likely fake.</li>
-          <li>31-69: Requires further scrutiny, potentially misleading.</li>
-          <li> 70-100: Reliable and credible.</li>
-        </ul>
-      </section>
+
       <div className="mt-7 mb-16">
         <Snippet hideCopyButton hideSymbol variant="flat">
           <span className="text-base">
@@ -24,8 +16,14 @@
 
 FakeAlert is a fake news detection app leveraging Ensemble ML models and NLP context-analysis to evaluate the credibility of news articles. With the responsive user interface built with Next.js, TypeScript, and Framer Motion and powered by Django REST API, FakeAlert provides credibility scores in real-time.
 
-## Key Features
+## Credibility Scores
+
+Cross-referencing claims with reliable databases and analysing context, every news article is assigned a credibility score ranging from 0 to 100, where:
 <ul>
+<li>0-30: Highly unreliable, likely fake.</li>
+<li>31-69: Requires further scrutiny, potentially misleading.</li>
+<li> 70-100: Reliable and credible.</li>
+</ul>
   <li> Can support 10+ concurrent table processes with 5+ customers in the system </li>
   <li> POSIX compliant IPC via pipes - named and ordinary </li>
   <li> Concurrent execution and assignment of tables to new customers </li>
