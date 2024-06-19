@@ -1,17 +1,5 @@
 # FakeAlert 
 
-      <div className="mt-7 mb-16">
-        <Snippet hideCopyButton hideSymbol variant="flat">
-          <span className="text-base">
-            Verify before you trust. Happy fact-checking!
-          </span>
-        </Snippet>
-      </div>
-
-
-
-
-
 ## About
 
 FakeAlert is a fake news detection app leveraging Ensemble ML models and NLP context-analysis to evaluate the credibility of news articles. With the responsive user interface built with Next.js, TypeScript, and Framer Motion and powered by Django REST API, FakeAlert provides credibility scores in real-time.
@@ -23,13 +11,6 @@ Cross-referencing claims with reliable databases and analysing context, every ne
 <li>0-30: Highly unreliable, likely fake.</li>
 <li>31-69: Requires further scrutiny, potentially misleading.</li>
 <li> 70-100: Reliable and credible.</li>
-</ul>
-  <li> Can support 10+ concurrent table processes with 5+ customers in the system </li>
-  <li> POSIX compliant IPC via pipes - named and ordinary </li>
-  <li> Concurrent execution and assignment of tables to new customers </li>
-  <li> Distinct table-waiter pairs and admin-hotelmanager communication via shared memory </li>
-  <li> Hotel manager is responsible for overseeing the total earnings, calculating the total earnings of all the waiters and handling termination </li>
-</ul>
 
 ## Getting started
 
