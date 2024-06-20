@@ -20,7 +20,7 @@ Cross-referencing claims with reliable databases and analysing context, every ne
 
 ## Getting started
 
-Download the [dataset](https://www.kaggle.com/datasets/jruvika/fake-news-detection/data) from Kaggle and import the libraries below, before running the fakenews.ipynb notebook.
+Download the [dataset](https://www.kaggle.com/datasets/jruvika/fake-news-detection/data) from Kaggle and import the libraries below, before running the ```fakenews.ipynb``` notebook.
 
 ### Importing Libraries
 ```sh
