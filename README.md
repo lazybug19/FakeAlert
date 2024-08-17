@@ -10,6 +10,7 @@ Cross-referencing claims with reliable databases and analysing context, every ne
   - 0-30: Highly unreliable, likely fake.
   - 31-69: Requires further scrutiny, potentially misleading.
   - 70-100: Reliable and credible.
+<img width="836" alt="image" src="https://github.com/user-attachments/assets/b84008b5-d307-4002-aa10-432a54b7e6fe">
 
 ## Tech stack Used
 - [Django REST](https://www.django-rest-framework.org/#quickstart)
